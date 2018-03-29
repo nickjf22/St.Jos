@@ -1,0 +1,633 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}/*"The value border-box forces the padding and borders into the width and height of the elements, instead of expanding them."*/
+body {
+    margin: 0;
+    padding: none;
+    text-align: center;
+    font-family:  sans-serif;
+   /* color: #222;
+    background: #f7f5f0;*/
+    width: 100%; /*giving the body wrapper a width prevents the layout from stretching too wide and setting the left and right margins to the value auto centers the wrapper in the browser.*/
+}
+.map {
+    width: 40%;
+}
+figure {
+    margin: 0;
+    line-height: 0;
+    position: relative;
+}
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+    background: rgba(19,43,102, .85);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+/* ---- Navigation ---- */
+.name {
+    font-size: 1.25em;
+    margin: 0;
+}
+.top-nav {
+    padding: .5em;
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    border: grey solid 2px;
+    border-width: 2px 2px 2px 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-nav li { /*targeting individual list items*/
+    text-align: center;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-decoration: none;    
+}
+.top-nav a {
+	font-size: .95em;
+	color: white;
+    padding: 10px 15px;
+    display: inline;
+    padding-left: 1.29em;
+    padding-right: 1.24em;
+    margin-left: -1px;
+}
+.top-nav a:hover {
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+/* ---- Layout Containers ---- */
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.main-header {
+    background: lightgray;
+    text-align: center;
+    padding-top: .7em;
+    width: 100%;
+}
+.page-title {
+    font-family: sans-serif;
+    color: #1e1ed1fa;
+    font-size: 3.2em;
+    font-weight: 600; /*this is not recognized in Chrome*/
+    margin-top: 0em;
+    margin-bottom: .2em;
+    padding: 0;
+    letter-spacing: .001em;
+}
+.phone-number {
+    color: #1e1ed1fa;
+    font-family: Arial;
+    font-size: 4;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: .4em;
+}
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font: arial;
+    font-size: 1.2em;
+    color: grey;
+    background: lightgray;
+    padding: none;
+}
+h1 {
+    color: black;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+h2 {
+    color: black;
+    font-size: 1.8em;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+h3 {
+    color: black;    
+    font-size: 1.6em;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+h4 {
+    color: black;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+h5 {
+    color: black;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+h6 {
+    color: black;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+.events-title {
+    font-size: 2em;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    padding: none;
+    margin: none;
+}
+.events {
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: 3px solid #bc1e0d;
+    border-radius: 8px;
+    font-family: sans-serif;
+    padding: none;
+    margin-top: 1em;
+}
+.news-title {
+    font-size: 2em;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    padding: none;
+    margin: none;
+}
+.news {
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: 3px solid #6a9ced;
+    border-radius: 8px;
+    font-family: sans-serif;
+    padding: none;
+    margin-top: 1em;
+}
+#board {
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+}
+#directors {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    width: auto;
+    display: inline-block;
+}
+#member-orgs {
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+}
+#members {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    width: auto;
+    display: inline-block;
+    list-style: none;
+    /*underline*/
+}
+.may-procession {
+    border: 0;
+    width: 100;
+    height: 75;
+    align-content: middle;
+}
+.calendar-title {
+    font-family: sans-serif;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    padding-top: .5em;
+    margin: none;
+}
+.calendar {
+    color: black;    
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: left;
+    list-style: none;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+.calendar>li{
+    padding-top: .4em;
+}
+
+.important-numbers {
+    color: black;    
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: left;
+    list-style: none;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: none;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+.important-numbers>li{
+    padding-top: .4em;
+}
+/*font-family: Calibri,sans-serif; color: #FF0000; font-weight: 700 align="center" style="text-align:center">*/
+a:hover {
+    text-decoration: none; 
+    color: blue;
+}
+a { 
+    text-decoration: none;
+}
+a:visited { 
+    text-decoration: none; 
+}
+a:focus { 
+    text-decoration: none; 
+}
+a:hover, a:active { 
+    text-decoration: none; 
+}
+/* ---- Page Elements ---- */
+img {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.grotto-pic {
+    width:100%;
+}
+.pizza {
+    width: 500px;
+    object-fit: cover;
+    margin-bottom: 3em;
+}
+.dannymac {
+    width: 400px;
+    object-fit: cover;
+}
+.project-site {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+.icon-location {
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+/*.icon-location:hover {
+
+}*/
+
+/*below here copied from Treehouse HTML Forms workspace project*/
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+label .light {
+  font-weight: 300;
+  display: inline;
+}
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+form {
+    max-width: 480px;
+  }
+button[type="button"],
+button[type="reset"],
+button[type="donate"],
+input[type="submit"] {
+    cursor: pointer;
+}
+a[target="_blank"] {
+    color: #39add1;
+    text-decoration: none;
+}
+.closing {
+    text-align: center;
+    margin: .2em;
+    padding: .5em;
+    padding-top: 0;
+}
+.text-content {
+    text-align: center;
+      
+}
+#donateButton {
+    position: relative;
+    left: 15em;
+}
+.contacted label{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: grey 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  width: 80%;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* end slideshow CSS */
+
+
+  /*@media screen and (min-width: 480px)*/
+
+  /* ================================= 
+    Media Queries
+==================================== */
+@media (min-width: 1px) {
+    .side-nav {
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+    .wrap {
+        min-height: calc(100vh - 130px); /*Viewport Height- a viewport relative unit. 1vh=1% of viewport height*/
+    }
+    .container {
+        width:90%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #hide-side-nav{
+    display: block;
+    margin-left: 105px;
+    margin-top: 238px;
+    background-color: black;
+    color: white;
+    border-width: 2px;
+    border-radius: 8px;  
+    float: left; 
+    position: fixed;/* Stay in place */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    z-index: 1; /* Stay on top */
+    }
+    .side-nav {
+    display: block;
+    padding: .3em;
+    padding-top: .45em;
+    margin: 0;
+    background-color: black;
+    border: grey solid 2px;
+    border-width: 2px 3px 2px 0px;
+    border-radius: 0px 8px 8px 0px;  
+    height: 240px;
+    float: left; 
+    position: fixed;/* Stay in place */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    z-index: 1; /* Stay on top */
+}
+.side-nav ul {
+    padding: 0;
+}
+.side-nav li {/*targeting individual list items*/
+    text-align: center;    
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.side-nav a {
+	font-size: .95em;
+    color: white;
+    padding-top: .1em;
+}
+.side-nav a:hover {
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+    	/* ---- Columns ---- */
+    .col {
+        font-size: 1em;
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+        margin-right: -4px;
+        padding-left: 1em;
+        padding-right: 1em;
+        vertical-align: top;
+    }
+    .primary-history
+    .secondary-history {
+    font-size: .1em;
+}
+.primary {
+    float: left;
+    width: 50%;
+}
+.secondary {
+    float: right;
+    width: 50%;
+}
+.article {
+    max-width: 80%;
+    align-content: center;
+    display: inline-block;
+}
+	/* ------------- */
+    aside {
+        text-align: center;
+        font-size: 1.4em;
+        width: 90%;
+        font-family: serif;
+    }
+    .white-reaper {
+        border: 0;
+        float: right;
+        max-width: 100%;
+        margin: .5em;
+    }
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+/*mobile first approach uses the min-width media feature since we're building the layout up from narrow screens to wider screen.
+"Every browser, from phones to desktop, will load the CSS outside the media query. These are the base rules that define the common 
+styles shared across all screen sizes and devices. And only those devices that are 769 pixels or wider will load the CSS inside this 
+media query.""When you use a mobile-first layout approach, you define all the common layout styles before adding any media queries."*/

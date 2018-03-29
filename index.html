@@ -1,0 +1,128 @@
+<!DOCTYPE html5>
+<html lang="en"> <!--Nest the head and body within the HTML.-->
+    <head><!--<head> tag is used for metadata attributes (like title, fonts, styles...)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css"><!--link the CSS reset above the main CSS file so that it is able to override any of the normalize resets in the main style sheet later on-->
+        <link rel="stylesheet" href="css/styles.css" type="text/css"> <!-- links to CSS file-->
+        <title>Saint Joseph's Area Association</title> <!--title displayed on browswer tab-->
+    </head>
+<body><!--the only thing that's actually going to be displayed in the web page is what you put between the <body></body> tags.
+    any content you want to display in the browser, including images, headings, paragraphs, links.
+    The  <body> tag is generally reserved for visible content on the page.  This content is what you would want to split up into the header, main, and footer sections as it helps to keep it organized.”-->
+        <div class="container">
+            <header class="main-header"> <!--logo, name, and purpose of site, navigation menu (links) INSIDE the body-->
+                <h1 class="page-title">
+                    Saint Joseph's Area Assoc., Inc. <!--this is the closest we have to a logo, and is the name-->
+                </h1>
+<p class="phone-number">502.637.3159</p>
+<nav class="clearfix">    <!--main navigation element-->
+        <ul class="top-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+            </div>
+        <div id="hideSN">
+            <div id="SN">
+            <ul class="side-nav"><!--Add a button to make the side nav pop out or hide it (JS?)-->
+                <li><a href="#top">Back to Top</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul></div>
+        <button onclick="hide()" id="hide-side-nav">
+            <<
+        </button></div>
+
+    </nav>
+        </header><!-- can include logo, name and purpose of site, and main navigation menu INSIDE the body-->
+    <div class="container">
+        <main> <!--bulk of content: “The content inside the <main> element should be unique to the document. It should not contain any content 
+    that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+    There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+-->
+            <img class="grotto-pic" alt="Picture of a Stone Grotto" src="img/GrottoPage/Grotto/img_4039.jpg"
+            alt="Saint Joseph's Grotto"> <!--https://bamood.wordpress.com/2015/11/08/hidden-in-plain-sight-st-josephs/-->
+            <p class="events-title"><h2><strong>Upcoming Events</strong></p></h2><!--makes bold-->
+        <div class="events text-content">
+            February 12, 6:30pm
+        </br>
+            "Bring your Chili" Supper
+        </br>
+            Pizza donated by <a href="http://www.dannymacspizza.com/">Danny Mac's Pizza</a>
+        </br>
+            <a href="http://easternparkway.org/">Eastern Parkway Baptist Church</a>
+        </br><a href="https://www.google.com/maps/place/Eastern+Parkway+Baptist+Church/@38.2132251,-85.7476595,18z/data=!4m5!3m4!1s0x88690d6cbb92b399:0xc6aa47d6d438b571!8m2!3d38.2130288!4d-85.7471269" target="_blank">601 Eastern Parkway</a>
+        </br> 7:00pm
+        </br>
+    <!--<img border="0" src="img/hot-slice-of-pizza-clipart-thumb2759981-copy1[1][1].jpg" width="300" height="300" alt="hot slice of pizza clipart" class="">-->
+    <a href="http://www.dannymacspizza.com/" target="_blank"><!--target="_blank" opens in a new tab-->
+        <img class="pizza" alt="pizza" id="j2j8ab8wimage_16ahimageimage" data-type="image" itemprop="contentUrl" src="https://static.wixstatic.com/media/edf15e_05560b8b9b96485ab6697aafe0cc54c3~mv2.jpg/v1/fill/w_1048,h_638,al_c,q_85,usm_0.66_1.00_0.01/edf15e_05560b8b9b96485ab6697aafe0cc54c3~mv2.webp">
+    <img class="dannymac" alt="Danny Mac's Pizza" src=https://static.wixstatic.com/media/edf15e_9397a8b1cc4152de66b14f7bcdd4babb.jpg/v1/fill/w_1046,h_1058,al_c,q_85,usm_0.66_1.00_0.01/edf15e_9397a8b1cc4152de66b14f7bcdd4babb.webp></a>
+        </p>
+    </div>
+            <p class="news-title"><h2><strong>News and Announcements</strong></h2></p><!--makes bold-->
+        <div class="news text-content"> 
+             <p>Against the Grain Brewery and Smokehouse has filed a zoning change for the property located at <a href="https://www.google.com/maps/place/719+Lynn+St,+Louisville,+KY+40217/@38.218223,-85.7470214,17z/data=!3m1!4b1!4m5!3m4!1s0x88690d15675893b3:0x4b46d25f6af62760!8m2!3d38.218223!4d-85.7448327" target="_blank">719 Lynn St.</a>
+                 (Swiss Hall/Park). A pubilic meeting was held on December 13, 2017, at 6:00pm at Swiss Hall.
+            </p>
+            <p>
+                <br>
+                    Visit the Center For Neighborhoods website to look at our Neighborhood Snapshot
+                <br>
+                  <a href="http://www.centerforneighborhoods.org/plananddevnapcomnap.htm#StJoseph"> Click Here</a> <!--broken link-->
+            </p>
+            <p>
+                Zanzabar Adds Music Hall to a
+                </br> Nearly Perfect Bar
+                  <a href="http://www.stjosaa.org/NewspaperArticles/170404Article.html">Click Here</a>
+            </p>
+            <p>
+                Off-campus dorms pitched for University of Louisville
+                </br> U of L says it isn't seeking the housing
+                </br>
+                  <a href="NewspaperArticles/120430Article.htm">Click Here</a>
+            </p>
+        </div>
+        <div class="clearfix">
+            <figure>
+                <a href="https://www.google.com/maps/place/The+Grotto+and+Garden+of+Our+Lady+of+Lourdes/@38.2135579,-85.7512828,15z/data=!4m5!3m4!1s0x0:0xb548163fd56cad26!8m2!3d38.2146547!4d-85.7463947" target="_blank"><img class="icon-location" src="img/location.svg" alt="Location"></a>
+                <img class="map" src="img/boundaryRev1.gif" alt="map of St. Joseph's Neighborhood"><!--link this to an actual Google Maps-->
+                <figcaption class="text-content">
+            <p class="project-site">Visit our project site, the old St. Joseph Infirmary Grotto Site.
+            <br>This map also outlines the association's boundaries.</p>
+            </figcaption>
+            </figure>
+        </div>
+            <p class="closing">
+            We hope that you find our website useful and a valuable resource.
+            If you have any questions or comments please feel free to email us <a href="mailto:stjosaa@hotmail.com?subject=Emai">here</a>.<!--(since not 100% of users have Mail app installed on PC so making Contact form after clicking on mail is better way”)-->
+            Gail Linville, President, St. Joseph's Area Association, Inc.
+                  <button type="donate" id="donateButton">Donate</button>
+            </p>
+    </main>
+        <footer><!--copyright, social media links, secondary navigations INSIDE the body.-->
+        <div class="container">
+                 <small>Like our page on <a href="www.facebook.com/STJOSAA" target="_blank">Facebook</a>
+                 Follow us on <a href="www.twitter.com/STJOSAA" target="_blank">Twitter</a>
+                 Check out our Photos on <a href="www.instagram.com/STJOSAA" target="_blank">Instagram</a>
+                </br> Saint Joseph's Area Association, Inc. 526 Atwood St, Louisville, KY 40217
+                <br> 502.637.3159
+                <a href="mailto:stjosaa@hotmail.com?subject=Email from Website"> stjosaa@hotmail.com</a>
+                </br>
+                <span>St. Joseph's Area Assoc., Inc. &copy 2018</span></small>
+        </div>
+        </footer> <!--INSIDE The body-->
+<script src="js/jquery-3.3.1.min.js"></script><!--links to jQuery file-->
+<script src="js/js.js"></script><!--links to JavaScript file-->
+    </body>
+</html>

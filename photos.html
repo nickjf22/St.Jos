@@ -1,0 +1,377 @@
+<!DOCTYPE html5>
+<html lang="en">
+<!--Nest the head and body within the HTML.-->
+
+<head>
+  <!--<head> tag is used for metadata attributes (like title, fonts, styles...)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <!--link the CSS reset above the main CSS file so that it is able to override any of the normalize resets in the main style sheet later on-->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <!-- links to CSS file-->
+  <title>Saint Joseph's Area Association</title>
+  <!--title displayed on browswer tab-->
+</head>
+
+<body>
+  <div class="container">
+    <header class="main-header">
+      <!--logo, name, and purpose of site, navigation menu (links) INSIDE the body-->
+      <h1 class="page-title">
+        Saint Joseph's Area Assoc., Inc.
+        <!--this is the closest we have to a logo, and is the name-->
+      </h1>
+      <p class="phone-number">502.637.3159</p>
+      <nav class="clearfix">
+        <!--main navigation element-->
+        <ul class="top-nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="calendar.html">Calendar</a>
+          </li>
+          <li>
+            <a href="history.html">History</a>
+          </li>
+          <li>
+            <a href="photos.html">Photos</a>
+          </li>
+          <li>
+            <a href="articles.html">Articles</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+  </div>
+  <div id="SN">
+    <ul class="side-nav">
+      <!--Add a button to make the side nav pop out or hide it (JS?)-->
+      <li>
+        <a href="#top">Back to Top</a>
+      </li>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="calendar.html">Calendar</a>
+      </li>
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="photos.html">Photos</a>
+      </li>
+      <li>
+        <a href="articles.html">Articles</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+  </header>  <!-- can include logo, name and purpose of site, and main navigation menu INSIDE the body-->
+  <main>
+<body>
+  <p>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+      <div class="numbertext">1 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station1.jpg">
+      <div class="text">Jesus finding a penny on tails</div>
+      </div>    
+      <div class="mySlides fade">
+      <div class="numbertext">2 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station2.jpg">
+      <div class="text">Jesus holding a guy's head</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">3 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station3.jpg">
+      <div class="text">Jesus doing karate</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">4 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station4.jpg">
+      <div class="text">Jesus giving out free hugs/div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">5 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station5.jpg">
+      <div class="text">Jesus getting low</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">6 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station6.jpg">
+      <div class="text">Jesus doing the Macarena</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">7 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station7.jpg">
+      <div class="text">Jesus with sick threads</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">8 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station8.jpg">
+      <div class="text">Jesus passively resisting</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">9 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station9.jpg">
+      <div class="text">Jesus crowd surfing</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">10 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station10.jpg">
+      <div class="text">Jesus shooting laser beams from his eyes</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">11 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station11.jpg">
+      <div class="text">Jesus napping</div>
+      </div>
+      <div class="mySlides fade">
+      <div class="numbertext">12 / 12</div>
+      <img class="fade" src="img/GrottoPage/Grotto/Station12.jpg">
+      <div class="text">Jesus changing</div>
+      </div><!--end slideshow container-->
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </p>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  
+  <!--msnavigation--><div align="center">
+		<p align="center"><b><font face="Tahoma" size="5"><em>Grotto Gals</em> 2013</font></b></p>
+		<p align="center">
+		<img border="0" src="photogallery/Loop1.gif" width="800" height="600"><br>
+		<br>
+		<b><font face="Tahoma" size="5">The Lofts<br>
+		Click Picture for more photos<br>
+		<a href="photos-lofts.html">
+		<img border="0" src="img/The%20Lofts/Lofts01.JPG" width="400" height="301"></a><br>
+		Assumption High School<br>
+		Click Picture for more photos<br>
+		<a href="photos-assumption.html">
+		<img border="0" src="C:\Users\nickj\Google Drive\Code Louisville\Final Project\front-end-template\img\Assumption HS\AssumptionHS1_Edit_1.JPG" width="400" height="300"></a><br>
+		Chili Supper 2014<br>
+		Click Picture for more photos<br>
+		</font></b><a href="photos-chili-2014.html">
+		<img border="0" src="img/Chili%20Supper%202014/StJoeChili01.JPG" width="400" height="300"></a></p>
+		<p align="center"><b><font size="5" face="Tahoma"><br>
+		Photos from the Mural at Bradley Ave and Brandeis Ave</font></b></p>
+		<!--webbot bot="PhotoAlbum" U-Include="photogallery/photo00005855/real.htm" clientside TAG="BODY" startspan -->
+<picture file-href="photogallery/photo00005855/real_p.htm" />
+<picture file-href="photogallery/photo00005855/real_x.htm" />
+<table border="0" cellspacing="0" cellpadding="0" id="fpGalleryTable_6724">
+<tr />
+<td align="center" valign="top" nowrap="" />
+<a href="img/Wall/Retaining%20wall%20004.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20004.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20007.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20007.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20009.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20009.jpg" width="100" height="75" title="" align="middle" /></a>
+<tr />
+<td align="center" valign="top" nowrap="" />
+<a href="img/Wall/Retaining%20wall%20012.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20012.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20014.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20014.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20015.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20015.jpg" width="100" height="39" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20016.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20016.jpg" width="100" height="75" title="" align="middle" /></a>
+<tr />
+<td align="center" valign="top" nowrap="" />
+<a href="img/Wall/Retaining%20wall%20017.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20017.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20018.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20018.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20019.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20019.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20020.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20020.jpg" width="100" height="75" title="" align="middle" /></a>
+<tr />
+<td align="center" valign="top" nowrap="" />
+<a href="img/Wall/Retaining%20wall%20021.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20021.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20023.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20023.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20024.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20024.jpg" width="100" height="75" title="" align="middle" /></a>
+<tr />
+<td align="center" valign="top" nowrap="" />
+<a href="img/Wall/Retaining%20wall%20029.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20029.jpg" width="75" height="100" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20031.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20031.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20033.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20033.jpg" width="100" height="75" title="" align="middle" /></a>
+<a href="img/Wall/Retaining%20wall%20035.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20035.jpg" width="100" height="75" title="" align="middle" /></a>
+<tr />
+<td align="center" valign="top" nowrap="" />
+<a href="img/Wall/Retaining%20wall%20036.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20036.jpg" width="100" height="75" title="" align="top" /></a>
+<a href="img/Wall/Retaining%20wall%20037.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20037.jpg" width="100" height="75" title="" align="top" /></a>
+<a href="img/Wall/Retaining%20wall%20038.jpg">
+<img border="0" vspace="5" hspace="5" src="photogallery/photo00005855/Retaining%20wall%20038.jpg" width="100" height="75" title="" align="top" /></a>
+</table>
+<!--webbot bot="PhotoAlbum" i-checksum="406" endspan --><p>
+	<br>
+&nbsp;</p>
+  <table border="0" cellpadding="0" cellspacing="0" width="600" id="table1">
+    <tr>
+      <td align="center"><a href="img/Grotto.jpg">
+      <img border="2" src="img/Grotto_small.jpg" xthumbnail-orig-image="img/Grotto.jpg" width="100" height="66"></a></td>
+      <td align="center"><a href="img/Grotto%20overview.jpg">
+      <img border="2" src="img/Grotto%20overview_small.jpg" xthumbnail-orig-image="img/Grotto overview.jpg" width="100" height="66"></a></td>
+      <td align="center"><a href="img/Grannies%20Plaque.jpg">
+      <img border="2" src="img/Grannies%20Plaque_small.jpg" xthumbnail-orig-image="img/Grannies Plaque.jpg" width="100" height="66"></a></td>
+      <td align="center"><a href="img/Artist%20Plaque.jpg">
+      <img border="2" src="img/Artist%20Plaque_small.jpg" xthumbnail-orig-image="img/Artist Plaque.jpg" width="100" height="66"></a></td>
+    </tr>
+    <tr>
+      <td align="center">
+      <p align="center"><b><font face="Arial" size="2">Grotto</font></b></td>
+      <td align="center">
+      <p align="center"><b><font face="Arial" size="2">Grotto Overview</font></b></td>
+      <td align="center">
+      <p align="center"><b><font face="Arial" size="2">Grannies Plaque</font></b></td>
+      <td align="center">
+      <p align="center"><b><font face="Arial" size="2">Artist Plaque</font></b></td>
+    </tr>
+    <tr>
+      <td align="center">
+      <p align="center">&nbsp;</td>
+      <td align="center" colspan="2">
+      <p align="center"><font face="Arial"><a href="grotto_img.html">Click here</a> 
+		for photos of the Grotto and<br>
+		the wonderful Grotto Granny's</font></td>
+      <td align="center">
+      <p align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">
+      &nbsp;</td>
+      <td align="center">
+      <a href="watermelon-festival-2008.html">
+		<img border="2" src="img/MayPro/Water1_small.JPG" xthumbnail-orig-image="img/Water1.JPG" width="100" height="75"></a></td>
+      <td align="center">
+      <a href="watermelon-festival-2008.html">
+		<img border="2" src="img/MayPro/Water2_small.JPG" xthumbnail-orig-image="img/Water2.JPG" width="100" height="75"></a></td>
+      <td align="center">
+      &nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">
+      <p align="center">&nbsp;</td>
+      <td align="center" colspan="2">
+      <p align="center"><b><font face="Arial" size="2">Watermelon Festival</font></b></td>
+      <td align="center">
+      <p align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="22" align="center">
+      <p align="center">&nbsp;</td>
+      <td height="22" align="center">
+      <p align="center"><a href="may-procession-2008.html">
+		<img border="2" src="img/MayPro/MayPro1_small.JPG" xthumbnail-orig-image="img/MayPro1.JPG" width="100" height="75"></a></td>
+      <td height="22" align="center">
+      <p align="center"><a href="may-procession-2008.html">
+		<img border="2" src="img/MayPro/MayPro2_small.JPG" xthumbnail-orig-image="img/MayPro2.JPG" width="100" height="75"></a></td>
+      <td height="22" align="center">
+      <p align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">
+      <p align="center">&nbsp;</td>
+      <td align="center" colspan="2">
+      <p align="center"><b><font face="Arial" size="2">May Procession 2008</font></b></td>
+      <td align="center">
+      <p align="center">
+		&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">
+      &nbsp;</td>
+      <td align="center" colspan="2">
+      &nbsp;</td>
+      <td align="center">
+      &nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">
+      <a href="img/2%20Ladys.jpg">
+		<img border="2" src="img/2%20Ladys_small.jpg" xthumbnail-orig-image="img/2 Ladys.jpg" width="73" height="102"></a></td>
+      <td align="center">
+      <a href="img/Fry.jpg">
+		<img border="2" src="img/Fry_small.jpg" xthumbnail-orig-image="img/Fry.jpg" width="64" height="104"></a></td>
+      <td align="center">
+      <a href="img/Lillian%20and%20Peary.jpg">
+		<img border="2" src="img/Lillian%20and%20Peary_small.jpg" xthumbnail-orig-image="img/Lillian and Peary.jpg" width="71" height="108"></a></td>
+      <td align="center">
+      <a href="img/Grotto%20Hwy%20Marker%20Web.JPG">
+		<img border="2" src="img/Grotto%20Hwy%20Marker%20Web_small.JPG" xthumbnail-orig-image="img/Grotto Hwy Marker Web.JPG" width="100" height="65"></a></td>
+    </tr>
+    <tr>
+      <td align="center">
+      <b><font face="Arial" size="2">Catherine Wilson <br>
+		&amp; Lillian Burns <br>
+		taken in 1941.</font></b></td>
+      <td align="center">
+      <b><font face="Arial" size="2">Fay Burns Cole<br>
+&nbsp;taken in 1941.</font></b></td>
+      <td align="center">
+      <b><font face="Arial" size="2">Lillian Burns<br>
+&nbsp;&amp; Peary Wilson, Jr.<br>
+		taken in 1942</font></b></td>
+      <td align="center">
+      <b><font face="Arial" size="2">Hwy.
+      Marker</font></b></td>
+    </tr>
+  </table>
+</div>
+        <footer>
+          <!--copyright, social media links, secondary navigations INSIDE the body.-->
+          <div class="container">
+            <small>Like our page on
+              <a href="www.facebook.com/STJOSAA" target="_blank">Facebook</a>
+              Follow us on
+              <a href="www.twitter.com/STJOSAA" target="_blank">Twitter</a>
+              Check out our Photos on
+              <a href="www.instagram.com/STJOSAA" target="_blank">Instagram</a>
+              </br> Saint Joseph's Area Association, Inc. 526 Atwood St, Louisville, KY 40217
+              <br> 502.637.3159
+              <a href="mailto:stjosaa@hotmail.com?subject=Email from Website"> stjosaa@hotmail.com</a>
+              </br>
+              <span>St. Joseph's Area Assoc., Inc. &copy 2018</span>
+            </small>
+          </div>
+        </footer>
+        <!--INSIDE The body-->
+<script src="js/js.js"></script>
+<!--links to JavaScript file-->
+</body>
+</html>

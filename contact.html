@@ -1,0 +1,177 @@
+<!DOCTYPE html5>
+<html lang="en">
+<!--Nest the head and body within the HTML.-->
+
+<head>
+    <!--<head> tag is used for metadata attributes (like title, fonts, styles...)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <!--link the CSS reset above the main CSS file so that it is able to override any of the normalize resets in the main style sheet later on-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <!-- links to CSS file-->
+    <title>Saint Joseph's Area Association</title>
+    <!--title displayed on browswer tab-->
+</head>
+
+<body>
+    <!--the only thing that's actually going to be displayed in the web page is what you put between the <body></body> tags.
+    any content you want to display in the browser, including images, headings, paragraphs, links.
+    The  <body> tag is generally reserved for visible content on the page.  This content is what you would want to split up into the header, main, and footer sections as it helps to keep it organized.”-->
+    <div class="container">
+        <header class="main-header">
+            <!--logo, name, and purpose of site, navigation menu (links) INSIDE the body-->
+            <h1 class="page-title">
+                Saint Joseph's Area Assoc., Inc.
+                <!--this is the closest we have to a logo, and is the name-->
+            </h1>
+            <p class="phone-number">502.637.3159</p>
+            <nav class="clearfix">
+                <!--main navigation element-->
+                <ul class="top-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="calendar.html">Calendar</a>
+                    </li>
+                    <li>
+                        <a href="history.html">History</a>
+                    </li>
+                    <li>
+                        <a href="photos.html">Photos</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+    </div>
+    <div id="SN">
+        <ul class="side-nav">
+            <!--Add a button to make the side nav pop out or hide it (JS?)-->
+            <li>
+                <a href="#top">Back to Top</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="calendar.html">Calendar</a>
+            </li>
+            <li>
+                <a href="history.html">History</a>
+            </li>
+            <li>
+                <a href="photos.html">Photos</a>
+            </li>
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    </header>
+    <!-- can include logo, name and purpose of site, and main navigation menu INSIDE the body-->
+    <main>
+    <link rel="stylesheet" href="C:\Users\nickj\Google Drive\Code Louisville\Final Project\front-end-template\css\styles.css"
+    type="text/css" /><!-- links to CSS file-->
+    <form><!--action="index.html" method="post" this can go in the form element in order to connect it with a backend-->
+        <h2>Contact Us</h2><!-- This is a form that goes nowhere, to demonstrate HTML forms.-->
+            <fieldset>
+                <legend><span class="number">1</span> Your Contact Info</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" tabindex="1"><!--Tab indecies help accessibilit when navigating through the form-->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="user_email" tabindex="2">
+                <label for="tel">Phone:</label>
+                <input type="tel" id="tel" name="user_telephone" tabindex="3">
+               <!-- <label for="password">Password:</label>
+                <input type="password" id="password" name="user_password">-->
+                    <label for="affiliation">Affiliation</label>
+                    <select id="affiliation" name="affiliation"  tabindex="4">
+                        <option value="resident">Resident</option>
+                        <option value="business">Business</option>
+                        <option value="community_group">Community Group</option>
+                        <option value="other">Other</option>
+                    </select>
+            </fieldset>
+                <fieldset>
+                    <legend>
+                        <span class="number">2</span> Your Address</legend>
+                    <label for="street">Street:</label>
+                    <input type="street" id="street" name="user_street" tabindex="5">
+                    <label for="city">City:</label>
+                    <input type="city" id="city" name="user_city" tabindex="6">
+                    <label for="zip">Zip Code:</label>
+                    <input type="zip" id="zip" name="user_zip" tabindex="7">
+                    </fieldset>
+            <fieldset>
+                <legend><span class="number">3</span> Your Comment</legend>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="user_comment"  tabindex="8"></textarea>
+                <label for="reason">Please Select Your Reason for Contacting Us</label>
+                <select id="reason" name="reason" tabindex="9">
+                    <optgroup label="Contact Us">Contact Us</optgroup>
+                    <option value="question">Ask a Question</option>
+                    <option value="suggestion">Make a Suggestion</option>
+                    <option value="report_crime">Report a Crime</option>
+                    <option value="report_web_issue">Report an Issue with this Website</option>
+                    <optgroup label="Get Involved">Get Involved</optgroup>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="cleanup">Neighborhood Cleanups</option>
+                    <option value="organize">Organize Events</option>
+                    <option value="leader">Become a Leader</option>
+                </select>
+                <label>Would you like for us to respond to your comment?</label>
+                    <input type="radio" id="yes" value="yes" name="response" tabindex="10"><label for="yes" class="light">Yes</label>
+                    <br>
+                    <input type="radio" id="no" value="no" name="response" tabindex="11"><label for="no" class="light">No</label>
+                    <br>
+                    <label>If yes, how would you like to be contacted?</label>
+                    <br>
+                    <div class="contacted">
+                    <input type="checkbox" id="phone" value="phone" name="response_phone" tabindex="12">
+                    <label for="phone" class="light">Phone</label>
+                    <br>
+                    <input type="checkbox" id="email" value="email" name="response_email" tabindex="13">
+                    <label for="email" class="light">E-mail</label>
+                    <br>
+                    <input type="checkbox" id="post" value="post" name="response_post" tabindex="14">
+                    <label for="post" class="light">Post</label>
+                    </div>
+            </fieldset>
+            <input type="submit"  tabindex="15">
+            <button type="reset"  tabindex="16">Clear Form</button>
+    </form>
+        <footer>
+            <!--copyright, social media links, secondary navigations INSIDE the body.-->
+            <div class="container">
+                <small>Like our page on
+                    <a href="www.facebook.com/STJOSAA" target="_blank">Facebook</a>
+                    Follow us on
+                    <a href="www.twitter.com/STJOSAA" target="_blank">Twitter</a>
+                    Check out our Photos on
+                    <a href="www.instagram.com/STJOSAA" target="_blank">Instagram</a>
+                    </br> Saint Joseph's Area Association, Inc. 526 Atwood St, Louisville, KY 40217
+                    <br> 502.637.3159
+                    <a href="mailto:stjosaa@hotmail.com?subject=Email from Website"> stjosaa@hotmail.com</a>
+                    </br>
+                    <span>St. Joseph's Area Assoc., Inc. &copy 2018</span>
+                </small>
+            </div>
+        </footer>        <!--INSIDE The body-->
+        <script src="js/jquery-3.3.1.min.js"></script>        <!--links to jQuery file-->
+        <script src="js/js.js"></script>        <!--links to JavaScript file-->
+        </body>
+        </html>
