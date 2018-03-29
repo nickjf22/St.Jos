@@ -84,7 +84,7 @@ figcaption {
 }
 .page-title {
     font-family: sans-serif;
-    color: #1e1ed1fa;
+    color: blue;
     font-size: 3.2em;
     font-weight: 600; /*this is not recognized in Chrome*/
     margin-top: 0em;
@@ -534,7 +534,7 @@ a[target="_blank"] {
     }
     #hide-side-nav{
     display: block;
-    margin-left: 105px;
+    margin-left: 0px;
     margin-top: 238px;
     background-color: black;
     color: white;
@@ -545,6 +545,20 @@ a[target="_blank"] {
     overflow-x: hidden; /* Disable horizontal scroll */
     z-index: 1; /* Stay on top */
     }
+    #show-side-nav{
+    display: block;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    border-width: 2px;
+    border-radius: 8px;  
+    float: left; 
+    position: fixed;/* Stay in place */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    z-index: 1; /* Stay on top */
+    }
+
     .side-nav {
     display: block;
     padding: .3em;
@@ -626,6 +640,11 @@ a[target="_blank"] {
         display: table;
         clear: both;
     }
+}
+@media screen and (max-width: 800px){
+    .top-nav {
+ flex-direction: column;
+}
 }
 /*mobile first approach uses the min-width media feature since we're building the layout up from narrow screens to wider screen.
 "Every browser, from phones to desktop, will load the CSS outside the media query. These are the base rules that define the common 

@@ -3,21 +3,18 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
+        var slides = document.getElementsByClassName("mySlides");
+    for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    setTimeout(showSlides, 3000); // Change image every 3 seconds   add a class w  for hide and show
 }
-    //end slideshow script//
+//end slideshow script//
 
-
-//making side nav hide//
-
+//makes side nav hide//
 function hide() {
     var x = document.getElementById("hideSN");
     if (x.style.display === "none") {
@@ -26,8 +23,11 @@ function hide() {
         x.style.display = "none";
     }
 }
+//  /makes side nav hide//
 
-//  /making side nav hide//
+
+
+
 
 
 
