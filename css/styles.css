@@ -107,8 +107,8 @@ footer {
     text-align: center;
     font: arial;
     font-size: 1.2em;
-    color: grey;
-    background: lightgray;
+    color: whitesmoke;
+    background: darkgray;
     padding: none;
 }
 h1 {
@@ -420,14 +420,13 @@ a[target="_blank"] {
 /* Slideshow container */
 .slideshow-container {
   max-width: 50%;
-  position: relative;
+  position: center;
   margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
-    
 }
 
 /* Next & previous buttons */
@@ -511,7 +510,6 @@ a[target="_blank"] {
   to {opacity: 1}
 }
 /* end slideshow CSS */
-
 
   /*@media screen and (min-width: 480px)*/
 

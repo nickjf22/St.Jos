@@ -51,38 +51,42 @@
                     </li>
                 </ul>
     </div>
-    <div id="SN">
-        <ul class="side-nav">
-            <!--Add a button to make the side nav pop out or hide it (JS?)-->
-            <li>
-                <a href="#top">Back to Top</a>
-            </li>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="calendar.html">Calendar</a>
-            </li>
-            <li>
-                <a href="history.html">History</a>
-            </li>
-            <li>
-                <a href="photos.html">Photos</a>
-            </li>
-            <li>
-                <a href="articles.html">Articles</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+    <div id="hideSN">
+        <div id="SN">
+            <ul class="side-nav">
+                <!--Add a button to make the side nav pop out or hide it (JS?)-->
+                <li>
+                    <a href="#top">Back to Top</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="calendar.html">Calendar</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+                <li>
+                    <a href="photos.html">Photos</a>
+                </li>
+                <li>
+                    <a href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    </nav>
-    </header>
-    <!-- can include logo, name and purpose of site, and main navigation menu INSIDE the body-->
+    <button onclick="hide()" id="hide-side-nav">
+        << </button>
+            </nav>
+            </header>
+            <!-- can include logo, name and purpose of site, and main navigation menu INSIDE the body-->
     <main>
         <!--bulk of content: “The content inside the <main> element should be unique to the document. It should not contain any content 
     that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
@@ -162,7 +166,7 @@ and the Grotto Granny's taking care of it.</b></p>
             </div>
         </footer>
         <!--INSIDE The body-->
-<script src="js.js"></script>
+<script src="js/js.js"></script>
 <!--links to JavaScript file-->
 </body>
 </html>
